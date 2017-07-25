@@ -3,6 +3,7 @@
 
 #include <QList>
 #include <QString>
+#include <QApplication>
 #include "Views/scene.h"
 #include "Views/menuview.h"
 #include "engine.h"
@@ -14,7 +15,7 @@ public:
     Game();
     //Attributes
     QList<Scene> scenes;
-    QList<MenuView> menus;
+    QList<MenuView*> menus;
     Scene* currentScene;
     Engine* engine;
     //Methods

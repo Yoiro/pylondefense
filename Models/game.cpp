@@ -3,18 +3,9 @@
 
 Game::Game()
 {
-    QGraphicsScene* mainMenu = new QGraphicsScene(this);
-    QPushButton* btnLoad = new QPushButton(/*icon, */"Load Game");
-    QPushButton* btnQuit = new QPushButton(/*icon, */"Quit To Desktop");
-    QPushButton* btnSelectMap = new QPushButton(/*icon, */"Select A Level");
-
-    QVBoxLayout* layout = new QVBoxLayout();
-    layout->addWidget(btnSelectMap);
-    layout->addWidget(btnLoad);
-    layout->addWidget(btnQuit);
-
-    //menus.append(mainMenu);
-    this->setLayout(layout);
+    this->setGeometry(0, 0, 800, 640);
+    MenuView* mainMenu = new MenuView();
+    menus.append(mainMenu);
     this->setScene(mainMenu);
 }
 
