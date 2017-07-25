@@ -25,24 +25,56 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    gameobject.cpp \
-    game.cpp \
-    engine.cpp \
-    scene.cpp \
-    menuscene.cpp \
-    mapscene.cpp \
-    gamebox.cpp
+    Models/engine.cpp \
+    Models/game.cpp \
+    Models/gameobject.cpp \
+    Models/engine.cpp \
+    Models/game.cpp \
+    Models/gameobject.cpp \
+    Views/gamebox.cpp \
+    Views/mainwindow.cpp \
+    Views/mapscene.cpp \
+    Views/scene.cpp \
+    main.cpp \
+    Models/engine.cpp \
+    Models/game.cpp \
+    Models/gameobject.cpp \
+    Vertex/point.cpp \
+    Views/gamebox.cpp \
+    Views/mainwindow.cpp \
+    Views/mapscene.cpp \
+    Views/scene.cpp \
+    main.cpp \
+    Vertex/vector.cpp \
+    Views/menuview.cpp
 
 HEADERS += \
-        mainwindow.h \
-    gameobject.h \
-    game.h \
-    engine.h \
-    scene.h \
-    menuscene.h \
-    mapscene.h \
-    gamebox.h
+    Models/engine.h \
+    Models/game.h \
+    Models/gameobject.h \
+    Models/engine.h \
+    Models/game.h \
+    Models/gameobject.h \
+    Models/engine.h \
+    Models/game.h \
+    Models/gameobject.h \
+    Views/gamebox.h \
+    Views/mainwindow.h \
+    Views/mapscene.h \
+    Views/scene.h \
+    Models/engine.h \
+    Models/game.h \
+    Models/gameobject.h \
+    Vertex/point.h \
+    Views/gamebox.h \
+    Views/mainwindow.h \
+    Views/mapscene.h \
+    Views/scene.h \
+    Vertex/vector.h \
+    Views/menuview.h
 
 FORMS += \
         mainwindow.ui
+
+RESOURCES += \
+    res/qrc.qrc
